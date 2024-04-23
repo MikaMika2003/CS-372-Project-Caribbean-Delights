@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="divider">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+        <item name="color">@color/grey</item>
+    </style>
+</resources>

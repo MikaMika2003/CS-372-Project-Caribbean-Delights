@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChickenSouse">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/souseImg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/chicken_souse_9"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:contentDescription="@string/souse"/>
+
+            <ImageButton
+                android:id="@+id/favourites"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/star_unselected"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/favouritesBtn" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/souseImg"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/souse"
+                android:textColor="@color/yellow"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/descriptionBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descriptionSouse"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"/>
+
+            <!-- Prep -->
+            <TextView
+                android:id="@+id/prep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/description"
+                app:layout_constraintTop_toBottomOf="@id/descriptionBox"
+                android:layout_marginTop="10dp"
+                tools:layout_editor_absoluteX="238dp"
+                tools:layout_editor_absoluteY="270dp" />
+
+            <TextView
+                android:id="@+id/prepTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prepTimeSouse"
+                app:layout_constraintBaseline_toBaselineOf="@id/prep"
+                app:layout_constraintTop_toBottomOf="@id/descriptionBox"
+                app:layout_constraintStart_toEndOf="@id/prep"
+                android:layout_marginTop="10dp" />
+
+            <!-- Difficulty -->
+            <TextView
+                android:id="@+id/difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficulty"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/prepTime"
+                app:layout_constraintBaseline_toBaselineOf="@id/prepTime"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/difficultyLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hard"
+                app:layout_constraintStart_toEndOf="@id/difficulty"
+                app:layout_constraintBaseline_toBaselineOf="@id/difficulty" />
+
+            <!-- Servings-->
+            <TextView
+                android:id="@+id/servings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/servings"
+                android:textColor="@color/black"
+                app:layout_constraintBaseline_toBaselineOf="@id/difficulty"
+                app:layout_constraintStart_toEndOf="@id/difficultyLevel"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/servingsSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size2"
+                app:layout_constraintBaseline_toBaselineOf="@id/servings"
+                app:layout_constraintStart_toEndOf="@id/servings"/>
+
+            <!-- Ingredients -->
+            <View
+                android:id="@+id/ingredientsBck"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:layout_constraintTop_toBottomOf="@id/prep"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/background_box"/>
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredients"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintTop_toTopOf="@id/ingredientsBck"
+                app:layout_constraintStart_toStartOf="@id/ingredientsBck"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/ingredient1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse1"
+                app:layout_constraintTop_toBottomOf="@id/ingredients"
+                app:layout_constraintStart_toStartOf="@id/ingredientsBck"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/ingredient2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse2"
+                app:layout_constraintTop_toBottomOf="@id/ingredient1"
+                app:layout_constraintStart_toStartOf="@id/ingredientsBck"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/ingredient3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse3"
+                app:layout_constraintTop_toBottomOf="@id/ingredient2"
+                app:layout_constraintStart_toStartOf="@id/ingredientsBck"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/ingredient4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse4"
+                app:layout_constraintTop_toBottomOf="@id/ingredient3"
+                app:layout_constraintStart_toStartOf="@id/ingredientsBck"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/ingredient5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse5"
+                app:layout_constraintTop_toBottomOf="@id/ingredient4"
+                app:layout_constraintStart_toStartOf="@id/ingredientsBck"
+                android:layout_marginStart="10dp" />
+
+            <!-- Right Column -->
+            <TextView
+                android:id="@+id/ingredient6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse6"
+                app:layout_constraintEnd_toEndOf="@id/ingredientsBck"
+                app:layout_constraintBaseline_toBaselineOf="@id/ingredient1"
+                android:layout_marginEnd="60dp" />
+
+            <TextView
+                android:id="@+id/ingredient7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse7"
+                app:layout_constraintBaseline_toBaselineOf="@id/ingredient2"
+                app:layout_constraintStart_toStartOf="@id/ingredient6"/>
+
+            <TextView
+                android:id="@+id/ingredient8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse8"
+                app:layout_constraintBaseline_toBaselineOf="@id/ingredient3"
+                app:layout_constraintStart_toStartOf="@id/ingredient6" />
+
+            <TextView
+                android:id="@+id/ingredient9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientSouse9"
+                app:layout_constraintBaseline_toBaselineOf="@id/ingredient4"
+                app:layout_constraintStart_toStartOf="@id/ingredient6"
+                android:layout_marginEnd="60dp" />
+
+
+            <TextView
+                android:id="@+id/toTaste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toTaste"
+                app:layout_constraintTop_toBottomOf="@id/ingredient5"
+                app:layout_constraintStart_toStartOf="@id/ingredientsBck"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Steps -->
+            <TextView
+                android:id="@+id/steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/steps"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/description"
+                app:layout_constraintTop_toBottomOf="@id/ingredientsBck"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/step1Souse"
+                app:layout_constraintTop_toBottomOf="@id/steps"
+                app:layout_constraintStart_toStartOf="@id/steps"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/step2Souse"
+                app:layout_constraintTop_toBottomOf="@id/step1"
+                app:layout_constraintStart_toStartOf="@id/steps"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/step3Souse"
+                app:layout_constraintTop_toBottomOf="@id/step2"
+                app:layout_constraintStart_toStartOf="@id/steps"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/step4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/step4Souse"
+                app:layout_constraintTop_toBottomOf="@id/step3"
+                app:layout_constraintStart_toStartOf="@id/steps"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/step5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/step5Souse"
+                app:layout_constraintTop_toBottomOf="@id/step4"
+                app:layout_constraintStart_toStartOf="@id/steps"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <View
+                android:id="@+id/bottomSpace"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@id/step5"/>
+
+            <ImageButton
+                android:id="@+id/homeBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleY="3"
+                android:scaleX="3"
+                app:srcCompat="@drawable/home"
+                android:background="@android:color/transparent"
+                app:layout_constraintTop_toBottomOf="@id/souseImg"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/homeBtn" />
+
+            <ImageButton
+                android:id="@+id/toFavourites"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/difficulty_star"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toStartOf="@id/homeBtn"
+                app:layout_constraintTop_toBottomOf="@id/souseImg"
+                android:contentDescription="@string/favourites" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

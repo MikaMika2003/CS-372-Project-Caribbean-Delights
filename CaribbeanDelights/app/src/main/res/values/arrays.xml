@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Options">
+        <item>All</item>
+        <item>Breakfast</item>
+        <item>Lunch/Dinner</item>
+        <item>Side</item>
+    </string-array>
+</resources>

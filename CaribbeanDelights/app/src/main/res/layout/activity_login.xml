@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/water_background_9"
+    tools:context=".Login">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/edit_box"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/background"
+        app:layout_constraintStart_toStartOf="@id/login"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/usernameEdt"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/user"
+        app:layout_constraintStart_toEndOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintBaseline_toBaselineOf="@id/username"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="45dp"
+        tools:ignore="LabelFor"
+        android:importantForAutofill="no"/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/passwordEdt"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/pass"
+        app:layout_constraintStart_toStartOf="@id/usernameEdt"
+        app:layout_constraintTop_toBottomOf="@id/usernameEdt"
+        app:layout_constraintBaseline_toBaselineOf="@id/password"
+        android:importantForAutofill="no" />
+
+    <View
+        android:id="@+id/signInBck"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/background"
+        android:background="@drawable/button"
+        app:layout_constraintTop_toBottomOf="@id/background"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="18dp"/>
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:text="@string/signin"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/background"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/incorrectTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incorrect"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintBottom_toBottomOf="@id/background" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

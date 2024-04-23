@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Caribbean Delights</string>
+    <string name="welcome">Welcome</string>
+
+    <!-- Login -->
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="createAccount">Create an Account: </string>
+    <string name="login">Login: </string>
+    <string name="username">Email: </string>
+    <string name="user">Email</string>
+    <string name="password">Password: </string>
+    <string name="pass">Password</string>
+    <string name="confirmPassward">Confirm Password: </string>
+    <string name="incorrect">Incorrect email or password.</string>
+
+
+    <!-- Signup -->
+    <string name="no_match">Email is invalid or passwords do not match.</string>
+    <string name="email_exists">Account already exists with this email.</string>
+    <string name="requirements">Password Requirement:</string>
+    <string name="requirement1">*Must be at least 8 characters long</string>
+    <string name="requirement2">*Must contain at least 1 digit</string>
+    <string name="requirement3">*Must contain at least 1 special character</string>
+    <string name="requirement4">*Must contain at least 1 uppercase character</string>
+    <string name="requirement5">*Must contain at least 1 lowercase character</string>
+
+    <!-- Logout -->
+    <string name="logout">Sign out</string>
+
+    <!-- Recipes Top -->
+    <string name="search">search</string>
+    <string name="searchTxt">Search</string>
+    <string name="favouritesBtn">Favourites</string>
+    <string name="homeBtn">Home</string>
+
+    <!-- Recipes -->
+    <string name="macaroni">Macaroni</string>
+    <string name="peas_n_rice">Peas n\' Rice</string>
+    <string name="souse">Chicken Souse</string>
+    <string name="bread">Johnny Bread</string>
+    <string name="fritters">Conch Fritters</string>
+
+    <!-- General -->
+    <string name="description">Description: </string>
+    <string name="ingredients">Ingredients: </string>
+    <string name="time">Total Time: </string>
+    <string name="difficulty">Difficulty: </string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="servings">Servings: </string>
+    <string name="size1">2 servings</string>
+    <string name="size2">4 servings</string>
+    <string name="size3">8 servings</string>
+    <string name="size4">8+ servings</string>
+    <string name="toTaste">*All seasonings are added to taste</string>
+    <string name="steps">Steps: </string>
+
+    <!-- Favourites -->
+    <string name="favourites">Favourites: </string>
+
+    <!-- Macaroni Activity -->
+    <string name="descriptionMacaroni">A Bahamian side dish that goes best when paired with peas n\' rice and any source of protein.</string>
+    <string name="prepTimeMac">1 hr</string>
+    <string name="ingredient1Macaroni">- 1 Box of ziti pasta</string>
+    <string name="ingredient2Macaroni">- 2 Cups of shredded cheddar</string>
+    <string name="ingredient3Macaroni">- 2 eggs</string>
+    <string name="ingredient4Macaroni">- ¼ Cup of butter</string>
+    <string name="ingredient5Macaroni">- 1 Cup of evaporated milk</string>
+    <string name="ingredient6Macaroni">- 1 Onion (diced)</string>
+    <string name="ingredient7Macaroni">- 1 Green bell pepper (diced)</string>
+    <string name="ingredient8Macaroni">- 1 Goat pepper (diced)</string>
+    <string name="ingredient9Macaroni">- Salt*</string>
+    <string name="ingredient10Macaroni">- Black pepper*</string>
+    <string name="ingredient11Macaroni">- Other seasonings*</string>
+
+
+    <string name="step1Macaroni">1) In a medium pot, boil water and add ziti noodles, bell pepper, onion, goat pepper, salt, and black pepper.</string>
+    <string name="step2Macaroni">2) Once softened drain water and add half of the cheese, evaporated milk, butter and eggs. Add more seasoning to taste. Add more cheese if you want it extremely cheesy.</string>
+    <string name="step3Macaroni">3) Add mixture to a pan and layer with the rest of the cheese. Bake on 350F for 40–45 minutes or until the top is brown.</string>
+    <string name="step4Macaroni">4) Let cool before cutting. Enjoy!!</string>
+
+    <!-- Peas n' Rice Activity -->
+    <string name="descriptionRice">Rice with a Bahamian twist.</string>
+    <string name="prepTimeRice">1 hr</string>
+    <string name="ingredient1Rice">- 3 Cups of long grain rice</string>
+    <string name="ingredient2Rice">- 3tbsp Butter or Cooking oil</string>
+    <string name="ingredient3Rice">- 1 Onion (diced)</string>
+    <string name="ingredient4Rice">- 1 Green bell pepper (diced)</string>
+    <string name="ingredient5Rice">- 1 Goat pepper (diced)</string>
+    <string name="ingredient6Rice">- 1 Can of pigeon peas</string>
+    <string name="ingredient7Rice">- Browning</string>
+    <string name="ingredient8Rice">- 2tbsp Ketchup or Tomato paste</string>
+    <string name="ingredient9Rice">- 6 Cups of water</string>
+    <string name="ingredient10Rice">- Salt*</string>
+    <string name="ingredient11Rice">- Black pepper*</string>
+    <string name="ingredient12Rice">- Other seasonings*</string>
+    <string name="ingredient13Rice">- Bay leaves (optional)</string>
+    <string name="ingredient14Rice">- Thyme (optional)</string>
+
+
+    <string name="step1Rice">1) In a medium pot, pour in oil or butter to cover the bottom. When that heats up or melts, fry down your vegetables until softened. Add thyme here.</string>
+    <string name="step2Rice">2) Add ketchup or tomato paste and browning to the pot. The amount of browning depends on how dark you want your rice to be.</string>
+    <string name="step3Rice">3) Add can of pigeon peas and bring that to a boil.</string>
+    <string name="step4Rice">4) Add water, a few bay leaves and more seasoning to taste. Bring that to a boil.</string>
+    <string name="step5Rice">5) Add rice to the pot. Cook covered for 30–45 minutes.</string>
+    <string name="step6Rice">6) Your rice is now ready to serve!!</string>
+
+    <!-- Souse Activity -->
+    <string name="descriptionSouse">A common Bahamian breakfast dish best paired with a slice of Johnny Bread. There are also other types of souse such as turkey, ribs, pig feet, and sheep tongue souse.</string>
+    <string name="prepTimeSouse">2 hrs</string>
+    <string name="ingredientSouse1">- Chicken wings</string>
+    <string name="ingredientSouse2">- 1lb of potatoes (diced)</string>
+    <string name="ingredientSouse3">- 1 Onion</string>
+    <string name="ingredientSouse4">- 1 Goat pepper</string>
+    <string name="ingredientSouse5">- Lime juice</string>
+    <string name="ingredientSouse6">- Whole allspice</string>
+    <string name="ingredientSouse7">- Bay leaves</string>
+    <string name="ingredientSouse8">- Salt*</string>
+    <string name="ingredientSouse9">- Water</string>
+
+    <string name="step1Souse">1) Scald chicken in a large pot with water and salt. It is best to do this the night before to have it ready for the morning.</string>
+    <string name="step2Souse">2) Once scald, wash the chicken clean.</string>
+    <string name="step3Souse">3) In another large pot add the water, chicken, potatoes, onion, goat pepper, some lime juice, allspice, bay leaves and salt.</string>
+    <string name="step4Souse">4) Cook covered until vegetables are cooked and aromatic.</string>
+    <string name="step5Souse">5) Serve and enjoy with a slice of johnny bread.</string>
+
+    <!-- Johnny Bread Activity -->
+    <string name="descriptionJohnnyBread">Also known as Johnny Cake, it is a breakfast side that can be eaten alone with a slice of melted cheddar cheese or butter on top, or paired with souse. </string>
+    <string name="prepTimeJohnnyBread">1 hr</string>
+    <string name="ingredientJohnnyBread1">- 1 Cup of all-purpose flour</string>
+    <string name="ingredientJohnnyBread2">- 2 eggs</string>
+    <string name="ingredientJohnnyBread3">- ½ Cup of baking powder</string>
+    <string name="ingredientJohnnyBread4">- Dash of salt</string>
+    <string name="ingredientJohnnyBread5">- ¾ Cup of sugar</string>
+    <string name="ingredientJohnnyBread6">- Water</string>
+    <string name="ingredientJohnnyBread7">- ¼ Cup of evaporated milk</string>
+    <string name="ingredientJohnnyBread8">- 2tbsp Butter/oil</string>
+
+    <string name="step1JohnnyBread">1) Mix all ingredients and add water into a soft dough consistency.</string>
+    <string name="step2JohnnyBread">2) Grease a pan and add mixture.</string>
+    <string name="step3JohnnyBread">3) Bake on 350F for 35 minutes to an hour or until light brown and dough is cooked through.</string>
+    <string name="step4JohnnyBread">4) Now cut and enjoy!!</string>
+
+    <!-- Conch Fritters Activity -->
+    <string name="descriptionConchFritters">A famous dish, especially for tourists, containing one of our seafood delicacies, conch. Best eaten with a special diiping sauce.</string>
+    <string name="prepTimeConchFritters">30 mins</string>
+    <string name="ingredientConchFritters1">- Conch meat (diced)</string>
+    <string name="ingredientConchFritters2">- Thyme*</string>
+    <string name="ingredientConchFritters3">-1tbsp Ketchup</string>
+    <string name="ingredientConchFritters4">- 1 Onion (diced, small)</string>
+    <string name="ingredientConchFritters5">- 1 Green bell pepper (diced, small)</string>
+    <string name="ingredientConchFritters6">- 1 Goat pepper (diced, small)</string>
+    <string name="ingredientConchFritters7">- ¼ Cup of baking powder</string>
+    <string name="ingredientConchFritters8">- ¾ Cup of all-purpose flour</string>
+    <string name="ingredientConchFritters9">- Seasoning salt*</string>
+    <string name="ingredientConchFritters10">- Salt* (optional)</string>
+    <string name="ingredientConchFritters11">- Black pepper*</string>
+    <string name="ingredientConchFritters12">- Red pepper flakes</string>
+    <string name="ingredientConchFritters13">- Cayenne pepper*</string>
+    <string name="ingredientConchFritters14">-¼ Cup of water</string>
+
+    <!-- Sauce -->
+    <string name="conchFrittersSauce">Dipping Sauce Ingredients:</string>
+    <string name="ingredientConchFrittersSauce1">- 1tbsp ketchup</string>
+    <string name="ingredientConchFrittersSauce2">- 1tbsp mayonnaise</string>
+    <string name="ingredientConchFrittersSauce3">- 1tsp mustard</string>
+    <string name="ingredientConchFrittersSauce4">- 1tbsp hot sauce</string>
+
+    <string name="step1ConchFritters">1) Heat your oil in a large pot or deep fryer to 365F.</string>
+    <string name="step2ConchFritters">2) Mix conch, onion, peppers, ketchup, thyme, seasonings, baking powder, flour, and water in a bowl to create a batter consistency.</string>
+    <string name="step3ConchFritters">3) In a separate bowl mix the ingredients for the dipping sauce and set aside.</string>
+    <string name="step4ConchFritters">4) Roll batter into balls and drop into oil. Fry until brown. Stick with a toothpick to ensure the inside is done.</string>
+    <string name="step5ConchFritters">5) Remove oil by placing the fritters unto a paper towel.</string>
+    <string name="step6ConchFritters">6) Once cool, enjoy!!</string>
+
+</resources>
